@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #0463a3;
+}
+
+form {
+  margin-bottom: 20px;
+}
+form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #0463a3;
+  border-radius: 4px;
+}
+form button {
+  padding: 10px 15px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: rgb(36.616, 162.384, 89.948);
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  margin: 10px 0;
+}
+ul li button {
+  margin-left: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+ul li button:hover {
+  background-color: rgb(213.698630137, 43.8356164384, 26.301369863);
+}
+
+.carrito-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #ffffff;
+  padding: 15px;
+  border: 1px solid #0463a3;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#totalCompra {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#pagarBtn {
+  background-color: #0463a3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#pagarBtn:hover {
+  background-color: rgb(2.7784431138, 68.7664670659, 113.2215568862);
+}
+
+/*# sourceMappingURL=style.css.map */

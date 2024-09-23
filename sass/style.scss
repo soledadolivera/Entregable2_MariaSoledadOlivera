@@ -1,0 +1,89 @@
+$primary-color: #0463a3;
+$secondary-color: #2ecc71;
+$font-color: #333;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: $font-color;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: $primary-color;
+}
+
+form {
+    margin-bottom: 20px;
+    input {
+        margin-bottom: 10px;
+        padding: 8px;
+        border: 1px solid $primary-color;
+        border-radius: 4px;
+    }
+    button {
+        padding: 10px 15px;
+        background-color: $secondary-color;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        &:hover {
+            background-color: darken($secondary-color, 10%);
+        }
+    }
+}
+
+ul {
+    list-style-type: none;
+    li {
+        margin: 10px 0;
+        button {
+            margin-left: 10px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 10px;
+            cursor: pointer;
+            &:hover {
+                background-color: darken(#e74c3c, 10%);
+            }
+        }
+    }
+}
+
+// Estilos para el carrito
+.carrito-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #ffffff;
+    padding: 15px;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#totalCompra {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#pagarBtn {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}
+
