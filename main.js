@@ -3,9 +3,9 @@ let total = 0; // Variable para almacenar el total de la compra
 
 // Array de objetos que representan los libros disponibles
 const libros = [
-    { titulo: "El Quijote", precio: 20 },
-    { titulo: "Cien Años de Soledad", precio: 25 },
-    { titulo: "1984", precio: 15 }
+    { titulo: "Harry Potter y la Piedra Filosofal", precio: 790 },
+    { titulo: "Cien Años de Soledad", precio: 890 },
+    { titulo: "Culpa Mia", precio: 500 }
 ];
 
 // Constante para almacenar usuarios registrados
