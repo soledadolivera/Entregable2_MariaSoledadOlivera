@@ -89,11 +89,19 @@ function mostrarTotal() {
     totalCompra.innerText = `Total a pagar: $${total}`;
 }
 
-// Función para manejar el pago
+// Función para manejar el pago y mostrar el resumen de la compra
 function manejarPago() {
     if (total > 0) {
-        const resultadoPago = document.getElementById("resultadoPago");
-        resultadoPago.innerText = `Gracias por su compra. El total a pagar es: $${total}`;
+        const usuarioActual = usuarios[usuarios.length - 1]; // Último usuario registrado
+        const resumenCompra = document.getElementById("resumenCompra");
+
+        resumenCompra.innerHTML = `
+            <h3>Resumen de la compra</h3>
+            <p>Nombre: ${usuarioActual.nombre} ${usuarioActual.apellido}</p>
+            <p>Email: ${usuarioActual.email}</p>
+            <p>Total a pagar: $${total}</p>
+            <p>Gracias por su compra.</p>
+        `;
         
         // Limpiar el carrito después del pago
         total = 0;
